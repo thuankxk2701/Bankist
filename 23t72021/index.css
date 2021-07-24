@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --font1: "Amiri", sans-serif;
+  --size1: 17px;
+  --color1: #666;
+  --font2: sans-serif, "Oswald";
+  --size2: 22px;
+  --size3: 48px;
+  --lineheight: 59px;
+}
+a {
+  text-decoration: none;
+}
+.banner_top {
+  width: 100%;
+  height: 600px;
+  background: url(1.jpg) top center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.banner_top:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(
+    left,
+    #3834341f 0%,
+    #2925255c 50%,
+    #3834341f 100%
+  );
+}
+.banner_top .word {
+  color: white;
+  position: absolute;
+  top: 250px;
+  left: 220px;
+  width: 600px;
+}
+
+.banner_top ._3column {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.banner_top ._3column ._1column {
+  width: 33.33%;
+}
+.banner_top ._3column ._1column.column_left {
+}
+.banner_top ._3column ._1column.column_left a {
+  font-size: 20px;
+  color: white;
+  display: inline-block;
+  padding: 40px 50px;
+}
+.banner_top ._3column ._1column.column_left a:hover {
+  color: #0345bf;
+}
+.banner_top ._3column ._1column.column_between {
+  text-align: center;
+}
+.banner_top ._3column ._1column.column_between img {
+  height: 30px;
+  padding-top: 35px;
+}
+.banner_top ._3column ._1column.column_right {
+  text-align: right;
+}
+.banner_top ._3column ._1column.column_right .icon {
+  display: inline-block;
+  margin-left: 30px;
+}
+.banner_top ._3column ._1column.column_right .icon a {
+  color: white;
+  font-size: 17px;
+  padding: 40px 5px;
+
+  display: inline-block;
+}
+.text_banner {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  color: white;
+}
+.text_banner .content {
+  width: 1170px;
+  margin: auto;
+}
+.text_banner .content .small {
+}
+.text_banner .content h1 {
+  font-family: var(--font2);
+  font-size: val(--size3);
+  line-height: var(--lineheight);
+  color: white;
+  width: 50%;
+}
+/* end banner top */
+.content1 {
+  width: 1170px;
+  margin: auto;
+  padding: 80px 0px;
+  font-family: var(--font1);
+  display: flex;
+  font: var(--size1);
+  color: var(--color1);
+}
+.content1 .left {
+  width: 35%;
+}
+.content1 .left span {
+}
+.content1 .left h2 {
+  font-family: var(--font2);
+  font-size: var(--size2);
+  width: 50%;
+}
+.content1 .right {
+  width: 65%;
+}
+.content1 .right p {
+  line-height: 20px;
+  margin-top: 15px;
+}
+.content1 .right p {
+}
+.content1 .right p:before {
+  content: "\f178";
+  font: normal normal normal 14px/1 Fontawesome;
+  position: relative;
+  left: -10px;
+  transition: 0.3s;
+  opacity: 0;
+}
+.content1 .right p:hover:before {
+  opacity: 1;
+  left: 0px;
+}
